@@ -9,6 +9,8 @@ import { Switch } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+
 
 
 
@@ -26,7 +28,7 @@ function App() {
   return (
     <div>
       <div className={darkTheme ? 'dark-theme' : 'light-theme'}>
-        <Switch
+        <switch
         checked={darkTheme}
         onChange={handleChange}
         inputProps={{ 'aria-label': 'controlled' }}
@@ -38,8 +40,10 @@ function App() {
               <label className={responsivo.hamb} for="side_menu"><span className={responsivo.hamb_line}></span></label>
               <nav className={responsivo.nav}>
                   <ul className={responsivo.menu}>
-                  <Switch onChange={() => setDarkTheme(prevTheme => !prevTheme)}>
+
+                  <li><Switch  onChange={() => setDarkTheme(prevTheme => !prevTheme)}>
                   </Switch>
+                  </li>
                           <li>Projetos</li>
                           <li>Experiencia</li>
                           <li>Curriculo</li>

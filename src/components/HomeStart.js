@@ -4,6 +4,10 @@ import styles from './HomeStart.module.css'
 import logo from '../img/teste.png' 
 import TabMenu from './TabMenu' 
 import Cards from './Cards'
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InfoIcon from '@mui/icons-material/Info';
+
  
 
 const HomeStart = () => {
@@ -13,10 +17,16 @@ const HomeStart = () => {
             <div className={styles.start1}>
                 <h3 className={styles.text1}><span>Olá, eu sou</span></h3>
                 <h1><span className={styles.ColorText}>Gabriel Oliveira</span></h1>
-                <h2>Desenvolvedor front end</h2>
+                <h2>Desenvolvedor Web</h2>
 
                 <p>Desenvolvimento Web - Landing Pages, E-Commerce, WireFrames</p>
                 <p>Implantação e Treinamento</p>
+                <div className={styles.RedesIcon}>
+                    <h1 className={styles.icon}> <LinkedInIcon/> </h1>
+                    <h1> <LinkedInIcon/> </h1>
+                    <h1> <LinkedInIcon/> </h1>
+                    
+                </div>
 
 
             </div>
@@ -30,6 +40,9 @@ const HomeStart = () => {
         <div className={styles.SobreContainer}>
             <h1>Sobre</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <InfoIcon/>
+
+        
         </div>
         </div>
 
